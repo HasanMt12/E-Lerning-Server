@@ -8,6 +8,7 @@ app.use(cors())
 const list = require('./CustomFakeDb/CoursesList.json')
 const courses = require('./CustomFakeDb/courses.json')
 
+
 app.get('/', (req, res) => {
     res.send('E-learning API running')
 })
@@ -18,13 +19,15 @@ app.get('/courses-list', (req, res) => {
 
 app.get('/courses/:id', (req, res) => {
     const id = req.params.id;
-    const chooseCourses = courses.find( course => course._id === id);
+    const chooseCourses = courses.filter( course => course.id === id);
     res.send(chooseCourses);
 })
 
 app.get('/courses', (req, res) => {
     res.send(courses);
 });
+
+
 
 app.listen(port, () => {
     console.log('E-learning web server running in port',port);
