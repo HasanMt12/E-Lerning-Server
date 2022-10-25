@@ -1,0 +1,27 @@
+[
+    {
+        "coursesList_id": "01",
+        "course_title": "swift"
+    },
+    {
+        "coursesList_id": "02",
+        "course_title": "R"
+    },
+    {
+        "coursesList_id": "03",
+        "course_title": "Ruby"
+    },
+    {
+        "coursesList_id": "04",
+        "course_title": "C++"
+    },
+    {
+        "coursesList_id": "05",
+        "course_title": "C"
+    },
+    {
+        "coursesList_id": "05",
+        "course_title": "MATLAB"
+    }
+    
+]
