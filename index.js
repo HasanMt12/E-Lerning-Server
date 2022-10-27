@@ -23,6 +23,7 @@ app.get('/courses/:id', (req, res) => {
     res.send(chooseCourses);
 })
 
+
 app.get('/courses', (req, res) => {
     res.send(courses);
 });
